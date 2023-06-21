@@ -1,0 +1,45 @@
+
+/* Code for styling the nav element */
+
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  
+}
+
+nav span {
+  font-family: 'Bungee', cursive;
+}
+
+.tweet-container {
+  display: flex;
+  align-items: center;
+}
+
+.write-tweet {
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.icon-container {
+  margin-left: 10px;
+  order: 3;
+}
+
+.left{
+display: flex;
+flex-direction: column;
+align-items: center;
+}

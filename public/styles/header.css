@@ -1,0 +1,41 @@
+/* Header.css */
+
+header {
+  height: 400px -120px;   width: 100%;
+  background-color: #f5a300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+margin-top: 100px;
+
+  }
+
+/* .profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  } */
+
+  header h2 {
+    color: white;
+  }
+  
+  header h2 .first-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+  }
+  
+  header h2 .last-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+
+  }
