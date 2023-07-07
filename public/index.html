@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>TWEETER - Home Page</title>
 
-    <!-- External CSS -->
+<head>
+  <!-- Meta Information -->
+  <title>TWEETER - Home Page</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+  <!-- External CSS -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
 
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/tweet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap"
+    rel="stylesheet">
 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/tweet.css" />
+  co
 
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composerCharCounter.js"></script>
-    
-  </head>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composerCharCounter.js"></script>
+
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+
   <nav>
     <span>TWEETER</span>
     <div class="left">
@@ -51,49 +56,90 @@
 
   <header>
     <div>
-      
-      <img class="profile" src="/images/profile-hex.png"> 
-      
-  </div>
+
+      <img class="profile" src="/images/profile-hex.png">
+
+    </div>
     <br>
     <div>
       <h2>
-        <span class="first-name">Ravneet</span> 
+        <span class="first-name">Ravneet</span>
         <span class="last-name">Kaur</span>
       </h2>
     </div>
-</header>
+  </header>
 
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <br>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class="form-footer">
-            <button type="submit">Tweet</button>
-            <div class="counter">140</div>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form action="/tweets" method="POST">
+        <label for="tweet-text">What are you humming about?</label>
+        <br>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div class="form-footer">
+          <button type="submit">Tweet</button>
+          <div class="counter">140</div>
+        </div>
+      </form>
+
+      <section id="tweet-container">
+        <article class="tweet">
+
+          <div class="avatar-container">
+            <img class="Avatar1" src="/images/Avatar1.png">
           </div>
-        </form>
-      </section>
+          <div class="tweet-details">
+            <div class="name-handle">
+              <h3 class="username">Rohda Jacobs</h3>
+              <span class="handle">@MrsJacobs</span>
+            </div>
+            <div class="content">
+              <p>Hello World.</p>
+            </div>
+            <div class="divider"></div>
+          <footer>
+            <span class="timestamp">10 days ago</span>
+            <div class="icons">
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+       </section>
+       <br>
+       <section id="tweet-container1">
+        <article class="tweet">
+
+          <div class="avatar-container">
+            <img class="Avatar2" src="/images/Avatar2.png">
+          </div>
+          <div class="tweet-details">
+            <div class="name-handle">
+              <h3 class="username">Newton</h3>
+              <span class="handle">@SirIssac</span>
+            </div>
+            <div class="content">
+              <p>If I have seen further it is by standing on the shoulder of giants.</p>
+            </div>
+            <div class="divider"></div>
+          <footer>
+            <span class="timestamp">10 days ago</span>
+            <div class="icons">
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+       </section>
 
 
-      <h1>Test Header</h1>
-      <p>Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud..</p>
-      <h2>Cupcake</h2>
-      <p>Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake.</p>
-      Explore the far reaches of the galaxy with this space-themed dummy text generator, with quotes from TV classics like Star Trek and real astronauts themselves.
-
-    <h3>Space</h3>
-    <p> 
-      Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
-    </p>
-    </main>
 
 
-  </body>
+    </section>
+  </main>
+</body>
 </html>
-

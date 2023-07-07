@@ -23,8 +23,10 @@
   resize: none;
   width: 100%;
 }
+
 .new-tweet textarea:focus {
   outline: none;
+  border-bottom: 4px solid black;
 }
 
 .new-tweet label {
@@ -39,6 +41,7 @@
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .new-tweet .form-footer {
@@ -54,3 +57,56 @@
 .counter.invalid {
   color: red;
 }
+
+
+.tweet {
+  background-color: #f4f1ec;
+  padding: 25px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.tweet-details {
+  flex-grow: 1;
+}
+
+.tweet .name-handle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+ 
+}
+
+.tweet .content {
+  margin-bottom: 10px;
+}
+
+.tweet .divider {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+.tweet {
+  transition: box-shadow 0.3s ease;
+}
+
+.tweet:hover {
+  box-shadow: 0 0 5px rgb(15, 1, 1);
+}
+
+.tweet:hover .icons i {
+  color: blue;
+} 
