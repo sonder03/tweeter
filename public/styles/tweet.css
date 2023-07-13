@@ -1,3 +1,21 @@
+/* ******************** error-messages********************** */
+.error-messages {
+  display: none;
+  color: red;
+  border: 3px solid;
+  border-color: red;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.error-messages.above-input {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+}
+
+
 .new-tweet {
   text-align: justify;
   margin-top: 2rem;
@@ -58,46 +76,72 @@
   color: red;
 }
 
+/***************************************** TWEETS***************************** */
 
 .tweet {
   background-color: #f4f1ec;
-  padding: 25px;
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 10px;
+  margin-bottom: 15px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  transition: box-shadow 0.3s ease;
 }
-
 
 .tweet-details {
   flex-grow: 1;
+}
+
+.tweet .avatar-container {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet .avatar-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.tweet .avatar-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .tweet .name-handle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
- 
+}
+
+.tweet .handle {
+  margin-left: 10px;
 }
 
 .tweet .content {
-  margin-bottom: 10px;
-}
-
-.tweet .divider {
   border-bottom: 1px solid black;
-  margin-bottom: 20px;
-}
-
-.tweet footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
+.tweet .timestamp {
+  color: #888;
+  margin-left: 5px;
+  align-items: baseline;
+}
+
+.tweet .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.tweet .icons i {
+  margin-left: 5px;
+  color: #888;
+}
 
 .tweet {
   transition: box-shadow 0.3s ease;
@@ -109,4 +153,45 @@
 
 .tweet:hover .icons i {
   color: blue;
-} 
+}
+
+/* REPOSNIVE CSS */
+
+/* Desktop screens */
+@media screen and (min-width: 1024px) {
+
+  .new-tweet {
+    flex-basis: 66.66%;
+  }
+
+  #tweet-container {
+    flex-basis: 100%;
+  }
+
+  .container {
+    margin-top: 150px;
+  }
+}
+
+
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+    .main-header {
+      order: 2;
+      margin-bottom: 10px;
+    }
+
+    .new-tweet {
+      order: 1;
+    }
+
+    #tweet-container {
+      order: 3;
+    }
+
+  }
+}

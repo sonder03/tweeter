@@ -1,13 +1,17 @@
 /* Header.css */
 
-header {
+.main-header {
   height: 400px -120px;   width: 100%;
   background-color: #f5a300;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+
+
+  
 }
 
 .profile{
@@ -19,17 +23,29 @@ margin-top: 100px;
 
   }
 
-  header h2 {
+  .main-header h2 {
     color: white;
   }
   
-  header h2 .first-name {
+  .main-header h2 .first-name {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
   }
   
-  header h2 .last-name {
+  .main-header h2 .last-name {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
 
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-header {
+      flex-basis: 33.33%;
+      float: left;
+      height: 556px;
+      width: 556px;
+      margin:50px;
+      margin-top: 150px;
+      bottom:0;  
+    }
   }

@@ -19,6 +19,8 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   text-align: justify;
+  display: flex;
+ 
 }
 
 /*
@@ -29,6 +31,9 @@ body {
   margin: auto;
   align-content: center;
   background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
  }
 
  
