@@ -151,7 +151,7 @@
   box-shadow: 0 0 5px rgb(15, 1, 1);
 }
 
-.tweet:hover .icons i {
+.tweet .icons  i:hover {
   color: blue;
 }
 
