@@ -180,18 +180,17 @@
     flex-direction: column;
   }
 
-    .main-header {
-      order: 2;
-      margin-bottom: 10px;
-    }
-
-    .new-tweet {
-      order: 1;
-    }
-
-    #tweet-container {
-      order: 3;
-    }
-
+  .main-header {
+    order: 2;
+    margin-bottom: 10px;
   }
+
+  .new-tweet {
+    order: 1;
+  }
+
+  #tweet-container {
+    order: 3;
+  }
+
 }
